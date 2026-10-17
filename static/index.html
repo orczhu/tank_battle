@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tank Battle</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #111; color: #ddd; font-family: system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; }
+  #who { font-size: 18px; font-weight: bold; }
+  canvas { background: #000; width: min(96vw, calc((100vh - 80px) * 248 / 208)); height: auto; }
+  #help { font-size: 13px; color: #999; }
+</style>
+</head>
+<body>
+  <div id="who">Connecting…</div>
+  <canvas id="game" width="992" height="832"></canvas>
+  <div id="help">Move: Arrow keys / WASD &nbsp;·&nbsp; Fire: Space / J &nbsp;·&nbsp; Start: Enter &nbsp;·&nbsp; Sound on/off: M</div>
+  <script src="/static/game.js"></script>
+</body>
+</html>
